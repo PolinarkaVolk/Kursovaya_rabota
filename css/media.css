@@ -1,0 +1,881 @@
+/** ===========================
+ *  БУРГЕР(планшет)
+ *  ===========================
+*/
+@media screen and (max-width:1024px){
+    .mobile-menu {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 16px;
+        top: 0;
+        background-color: white;
+        left: 0;
+        right: 0;
+        height: 97px;
+        z-index: 9999999;
+      }
+      .mobile-menu__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        transition: 0.4s;
+        right: 48%;
+      }
+      .mobile-menu__icon {
+        display: block;
+        position: relative;
+        background:  #BA9BFC;
+        width: 100%;
+        height: 0px;
+        transition: 0.4s;
+        border-radius: 7px;
+      }
+      .mobile-menu__icon::after, .mobile-menu__icon::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: #BA9BFC;
+        width: 100%;
+        height: 7px;
+        transition: 0.4s;
+        border-radius: 7px;
+      }
+      .mobile-menu__icon::after{
+        border-radius: 7px;
+        top:5px;
+        
+      }
+      
+      .mobile-menu__icon::before {
+        top: -7px;
+        border-radius: 7px;
+      }
+      .mobile-menu__container {
+        position: fixed;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 97px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        height: 0;
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.2s;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 4px 40px #BA9BFC;
+        border-radius: 0px 0px 80px 80px;
+      }
+      .mobile-menu__list {
+        transition: 0.5s;
+        width: 90%;
+        display:flex;
+        justify-content: space-between;
+        transition-delay: 0.5s;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 60px;
+      }
+      .mobile-menu__item {
+        font-size: 14px;
+        padding-bottom: 30px;
+      
+      }
+      .mobile-menu__name{
+        font-weight:700;
+      }
+      .mobile-menu__name{
+        padding-bottom: 40px;
+      }
+      .mobile-menu__link {
+        text-decoration: none;
+        color: black;
+      }
+      .mobile-menu__subitem{
+        margin-bottom:30px;
+      }
+      .mobile-menu__checkbox {
+        display: none;
+      }
+      .mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+        opacity: 1;
+        transition-delay: 0s;
+      }
+      .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+        height: 295px;
+        transition-delay: 0s;
+      }
+      .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+        background: transparent;
+      }
+      .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+        top: 0;
+      }
+      .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      
+/** ===========================
+ *  Преподаватели (планшет)
+ *  ===========================
+*/
+    .tel{
+        position: fixed;
+        right: 20px;
+    }
+    .logo{
+        position: fixed;
+    }
+    .menu{
+        display:none;
+    }
+    .rectan:hover li{
+        display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    gap:40px;
+    /* width: 374px; */
+    box-shadow: 0px 35px 40px 0px #BA9BFC80;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 30px;
+    padding-right:30px;
+    position:absolute;
+    z-index: 100;
+
+    }
+    
+    
+    .rectan{
+        width: 45px;
+        height: 7px;
+        background: #BA9BFC;
+        border-radius: 7px;
+        margin-bottom: 5px;
+    }
+    .textforblocks{
+        text-align: center;
+        margin-left: 0;
+       
+        margin-bottom: 40px;
+    }
+    .personcoach{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap:28px;
+        max-width: 959px;
+        max-height: none;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 0;  
+    }
+    
+    .maincontainer{
+        background-image:url(../img/back1.png);
+        background-repeat: no-repeat;
+    
+    }
+    .person3,.person7{
+        margin-top: 0;
+    }
+    .footercontent{
+        display: flex;
+        gap:0;
+        justify-content: space-between;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 40px;
+    }
+    .swimcoaches{
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: center;
+        gap:62px;
+    }
+    .person22,.person44{
+        margin-top:0px;
+    }
+    .spec{
+        bottom:0;
+    }
+    .figures{
+        display: none;
+    }
+    .personcoach{
+        position: static;
+    }
+    .personcoach_h2{
+        position: static;
+    }
+    .teachers{
+        position:static;
+        padding-top: 40px;
+        margin-bottom: 60px;
+    }
+   .group_h2{
+    margin-top: 100px;
+   }
+   .footercontent{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 14px;
+    min-width: 0;
+    
+}
+/** ===========================
+ *  Тренировки (планшет)
+ *  ===========================
+*/
+.freelessontext{
+    font-size: 48px;
+    width: auto;
+}
+.freelesson{
+    margin-top: 63px;
+    position: static;
+    background-image: url(../img/workout_green.png);
+    background-repeat: no-repeat;
+    padding-top: 125px;
+    padding-bottom: 115px;
+    padding-left: 100px;
+    padding-bottom: 115px;
+   
+}
+.freelesson img{
+    display: none;
+}
+.freelessonblock{
+    margin-left: 0;
+    position: static;
+}
+.timetable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    font-size: 18px;
+}
+.differentclass{
+    min-width: 420px;
+}
+.elips{
+    width: 152px;
+    height: 152px;
+    font-size: 18px;
+}
+.diffclass1,.diffclass2{
+    min-width: 420px;
+    min-height: 280px;
+}
+/** ===========================
+ *  Стоимость (планшет)/(телефон)
+ *  ===========================
+*/
+.withgreen{
+    background-image: url(../img/back2.png);
+    background-repeat: no-repeat;
+}
+
+.somediscrip{
+    font-size: 14px;
+}
+.somediscrip span{
+    font-size: 20px;
+}
+.title{
+    font-size:20px;
+    width: 300px;
+}
+.textincircle{
+    font-size: 20px;
+}
+.textundercircle{
+    font-size: 20px;
+}
+.circle{
+    width: 180px;
+    height: 180px;
+}
+.check{
+    width: 380px;
+    height:38px;
+    margin-bottom: 100px;
+    font-size:16px;
+}
+.checkprice{
+    width:330px;
+}
+.discrip{
+    width: 260px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tel{
+    right:20px;
+}
+/** ===========================
+ *  Главная (планшет)
+ *  ===========================
+*/
+.maintext{
+    position:static;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.figures{
+    display: none;
+}
+.formain{
+    background-image: url(../img/formain.png);
+}
+/** ===========================
+ *  О нас (планшет)
+ *  ===========================
+*/
+.adaptivn-slayder{
+    position:absolute;
+    top:410px;
+    left:10%;
+    right: 10%;
+    min-width:80%;
+    
+}
+
+.whywe{
+    margin-top:650px;
+}
+.uneizmen-akemada {
+    position: relative;
+    text-align: center;
+    top:530px;
+}
+.forabout{
+    background-image: url(../img/forab.png);
+}
+.about{
+    position:static;
+}
+
+
+.maintextabout{
+    position:static;
+    margin-top: 40px;
+    background-image: none;
+    padding-bottom: 60px;
+    /* padding-right:20px; */
+    
+}
+.maintextabout p{
+    padding-right:20px;
+}
+.forabout{
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+}
+ /** ===========================
+ *  Преподаватели (телефон)
+ *  ===========================
+*/
+@media screen  and (max-width:768px){
+nav{
+    width: 100vw;
+    
+}
+.mob-logo{
+    left: 48%;
+    z-index: 100000000000000000000000000;
+    position: fixed;
+    display: block;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 360px;
+    transition-delay: 0s;
+  } 
+.mobile-menu__container{
+  
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.mobile-menu__list{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 150px 50px 50px 50px;
+   grid-template-areas: 
+   "a b"
+   "a f"
+   "e f"
+   "g f";
+   
+}
+.tren{
+    grid-area:a;
+    grid-row: 1/3;
+}
+.pri{
+    grid-area: b;
+    grid-row: 1/2;
+    margin-left: 40px;
+}
+.cont{
+    grid-area: e;
+    grid-row: 3/4;
+}
+.mo{
+    grid-area: f;
+    grid-row: 2/6;
+    margin-left: 40px;
+}
+.prep{
+    grid-area: g;
+    grid-row: 4/5;
+
+}
+.mobile-menu__item{
+    padding-bottom:30px;
+}
+.mobile-menu__subitem{
+    margin-bottom:20px;
+}
+.mobile-menu__name{
+    padding-bottom: 30px;
+}
+.mobile-menu__list li{
+    font-size: 12px;
+}
+.logo{
+    display: none;
+}
+.tel a{
+    font-size:12px;
+    
+}
+.tel{
+    margin-right: 0%;
+}
+
+.mobile-menu{
+    margin-right: 20px;
+}
+
+
+.logo-name  a{
+    font-size: 12px;
+    padding-right: 5px;
+}
+.menu{
+    display:none;
+}
+.textforblocks{
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.personcoach{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:30px;
+    max-width: 959px;
+    max-height: none;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 0;  
+}
+.groupcoaches{
+    gap:30px;
+}
+    
+.withpurple{
+    background-image:url(../img/back1.png);
+    background-repeat: no-repeat;
+}
+.person3,.person7{
+    margin-top: 0;
+}
+.swimcoaches{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    gap:30px;
+}
+.person22,.person44{
+    margin-top:0px;
+}
+.spec{
+    bottom:0;
+}
+.figures{
+    display: none;
+}
+.personcoach{
+    position: static;
+}
+.personcoach_h2{
+        position: static;
+}
+.teachers{
+    position:static;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+   .group_h2{
+    margin-top: 100px;
+}
+   .networksicons{
+    display: flex;
+    gap:18px;
+    margin-top: 20px;
+}
+.number,.mail,.office,.counters{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.footercontent{
+    display: flex;
+        
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
+    font-size: 8px;
+    min-width: 0;   
+}
+.icon a img{
+    width: 11.63px;
+    height: 11.25px;
+    user-select: none;
+}
+footer{
+    height:190px;
+    padding-left: 10px;
+    padding-right: 10px;
+       
+}
+/** ===========================
+ *  Тренировки (телефон)
+ *  ===========================
+*/
+.textforworkout h1{
+    font-size: 24px;
+}
+.textforworkout p{
+    font-size: 12px;
+}
+.textundercircle{
+    font-size:14px;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+}
+.send{
+    width:134px;
+    height:33px;
+    font-size:12px;
+    margin-top: 20px;
+}
+.new {
+    height: 40px;
+    width: 300px;
+    margin-top: 49px;
+    margin-bottom: 98px;
+}
+.check{
+    font-size:12px;
+}
+.checkprice{
+    width:250px;
+}
+.timeforgym,.trener,.class,.headtrener,.headclass,.headtimeforgym{
+    font-size:14px;
+}
+.headtrener{
+    width:10%;
+}
+
+.freelessontext{
+    padding-top: 20px;
+    font-size: 24px;
+    width: auto;
+    line-height: 35px;
+}
+.freelesson{
+    margin-top: 30px;
+    position: static;
+    background-image: url(../img/predl.png); 
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-left: 70px;
+    padding-bottom: 61px;
+}   
+.freelesson img{
+    display: none;
+}
+.freelessonblock{
+    margin-left: 0;
+    position: static;
+}
+.timetable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    font-size: 14px;
+    padding-left:40px;
+    padding-right:40px;
+    width:75%;
+}
+
+.elips{
+    width: 102px;
+    height: 102px;
+    font-size: 14px;
+}
+.differentclass {
+    min-width: 310px;
+    margin-bottom: 130px;
+}
+.diffclass1,.diffclass2{
+    min-width: 310px;
+    min-height: 220px;
+    
+}
+/** ===========================
+ *  Стоимость (телефон)
+ *  ===========================
+*/
+.textforpricepage h1{
+    font-size: 24px;
+    
+}
+.textforpricepage{
+    margin-bottom:40px;
+}
+.onetimecard .textforonetimecard{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+}
+.onetimecard{
+    height: 300px;
+}
+.price{
+    font-size: 14px;
+}
+.logo-img{
+    margin:0;
+}
+/** ===========================
+ *  Главная (телефон)
+ *  ===========================
+*/
+.formain{
+    background-image: url(../img/fortel.png);
+}
+.blocksofnetworks{
+    gap:60px;
+}
+.logo{
+    display:block;
+}
+.logo-name{
+    display: none;
+}
+.maintext h1{
+    font-size: 24px;
+}
+.maintext p{
+    font-size: 12px;
+}
+.reserve{
+    width: 134px;
+height: 33px;
+font-size: 12px;
+margin-top: 20px;
+}
+.salecontainer h2,.consulting h2,.map h2,.contact h2,.networks h2{
+    font-size: 16px;
+}
+.time{
+    font-size: 16px;
+    margin-top:30px;
+}
+.row{
+    font-size: 14px;
+}
+
+.rectangle,iframe{
+    width:386px;
+    height:453px;
+}
+.rectangle .row{
+    font-size: 12px;
+    margin-top:30px;
+}
+.networksblock{
+    width: 150px;
+    height: 150px;
+}
+.networksblock a img{
+    margin:35px;
+    width: 80px;
+    height: 80px;
+}
+.row{
+    flex-direction: column;
+   
+}
+.rectangle .row{
+    margin-top: 27px;
+}
+.town{
+    margin-bottom: 5px;
+}
+.tel1{
+margin-bottom:5px;
+}
+.consulting{
+margin-top: 100px;
+}
+/** ===========================
+ *  О нас (телефон)
+ *  ===========================
+*/
+
+.inSMI{
+    margin-bottom:100px;
+
+}
+.about{
+    font-size: 24px;
+}
+.whywe,.weinsmi,.faq{
+    font-size: 16px;
+}
+h3{
+    font-size:14px;
+}
+.maintextabout p{
+    font-size:14px;
+}
+.tab-title{
+    font-size: 14px;
+}
+.whywecard h3{
+    font-size: 14px;
+}
+.whywecard div{
+    width:162px;
+    height: 162px;
+}
+.whywecard img{
+    width:80px;
+    height: 80px;
+}
+.tab{
+    padding:15px 30px;
+}
+.accordion{
+    margin-bottom:100px;
+}
+.boxforpic img {
+    width: 230px;
+    height: 323px;
+    border-radius: 40px;
+}
+}
+@media screen and (max-width:570px){
+.adaptivn-slayder{
+    max-width: 90%;
+    top:0;
+    left:0;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 15px;
+          
+
+    }
+    .whywe{
+        margin-top: 100px;
+    }
+    .adaptivn-slayder .parag img{
+        height:300px;
+    }
+    .uneizmen-akemada {
+        text-align: center;
+        top:0;
+    }
+}
+
+@media screen  and (max-width:768px) and   (min-width:678px){
+.freelesson{
+    background-image: url(../img/predl1.png);
+    padding-top: 55px;
+    padding-left: 70px;
+    padding-bottom: 55px;
+       
+} 
+}
+@media screen  and (max-width:1024px) and   (min-width:428px){
+.diffclass1,.diffclass2{
+    min-width: 420px;
+    min-height: 220px;
+}
+.differentclass {
+    min-width: 420px;
+}
+    
+}
+@media screen  and (max-width:768px) and   (min-width:500px){
+.footercontent{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+}
+@media screen and (max-width:500px){
+.fieldforform{
+    width:260px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+.rectangle,iframe{
+    width:300px;
+    height:440px;
+}
+    
+}
