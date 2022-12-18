@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/media.css" >
+    <link rel="stylesheet" href="css/animate.css" >
+    <link rel="icon" href="img/icon.png">
+    <title>YourForm</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="logo" >
+                    <a href="homepage.html"><img class="logo-img" src="img/logo.png" alt="logo"></a>
+                    <div class="logo-name"><a href="homepage.html">YourForm</a></div>
+                </div>
+                <nav class="mobile-menu">
+                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                    <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+                    <div class="mobile-menu__container">
+                    <ul class="mobile-menu__list">
+                      <div class="mobile-menu__item tren">
+                        <li class="mobile-menu__name">Тренировки</li>
+                        <li class="mobile-menu__subitem"><a  href="workout.html" class="mobile-menu__link">Групповые занятия</a></li>
+                        <li class="mobile-menu__subitem"><a  href="#" class="mobile-menu__link">Персоналки</a></li>
+                        <li class="mobile-menu__subitem"><a  href="#" class="mobile-menu__link">Бассейн</a></li>
+                      </div>
+                      <div class="mobile-menu__item prep">
+                        <li class="mobile-menu__name"><a href="treners.html" class="mobile-menu__link">Преподаватели</a></li>
+                      </div>
+                      <div class="mobile-menu__item pri">
+                        <li class="mobile-menu__name">Цены</li>
+                        <li class="mobile-menu__subitem"><a  href="price.html" class="mobile-menu__link">Абонементы</a></li>
+                        <li class="mobile-menu__subitem"><a  href="#" class="mobile-menu__link">Акции</a></li>
+                      </div>
+                      <div class="mobile-menu__item cont">
+                        <li class="mobile-menu__name">Контакты</li>
+                      </div>
+                      <div class="mobile-menu__item mo">
+                        <li class="mobile-menu__name">Ещё</li>
+                        <li class="mobile-menu__subitem"><a  href="about.html" class="mobile-menu__link">О нас</a></li>
+                        <li class="mobile-menu__subitem"><a  href="#" class="mobile-menu__link">Галерея</a></li>
+                        <li class="mobile-menu__subitem"><a  href="#" class="mobile-menu__link">Правила посещения</a></li>
+                        <li class="mobile-menu__subitem"><a  href="#" class="mobile-menu__link">Оплата</a></li>
+                      </div>
+                    </ul>
+                    </div> 
+                    
+                </nav>
+                <div class="menu">
+                    <ul class="menuwithdrop">
+                        <li class="li"><a href="#">Тренировки</a>
+                            <ul class="submenu">
+                                <li class="subitem"><a href="workout.html">Групповые&nbsp;занятия</a></li>
+                                <li class="subitem"><a href="#">Персоналки</a></li>
+                                <li class="subitem"><a href="#">Бассейн</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="#">Цены</a>
+                            <ul class="submenu">
+                                <li class="subitem"><a href="price.html">Абонемент</a></li>
+                                <li class="subitem">Акции</li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="treners.html">Преподаватели</a></li>
+                        <li class="li"><a href="#">Контакты</a></li>
+                        <li class="li"><a href="#">Ещё</a>
+                            <ul class="submenu">
+                                <li class="subitem"><a href="about.html">О&nbsp;нас</a></li>
+                                <li class="subitem">Галерея</li>
+                                <li class="subitem">Правила&nbsp;посещения</li>
+                                <li class="subitem">Оплата</li>
+                            </ul>
+                        
+                        </li>
+                    </ul>
+                </div>
+                <div  class="tel"><a href="tel:999">Позвонить</a></div>
+            </nav>
+       </header>
+       <div class="maincontainer forabout">
+        <div class="figures">
+            <div class="figure-left"><img src="img/about_green.png" alt="vector"></div>
+            <div><img src="img/about_pink.png" alt="vector"></div>
+        </div>
+        
+            <h1 class="about">О нас</h1>
+            <div class=" maintextabout">
+            <p>Привет. Мы новая сеть тренажерных залов YourForm. 
+                На данный момент мы уже открыли свои двери в пяти районах Минска и не собираемся останавливаться. 
+                Наши спортивные клубы предлагают различные тренировки на все группы мышц, 
+                а опытные тренера и инструкторы с радостью помогут вам.</p>
+            </div>
+       </div>
+       <div class="adaptivn-slayder">
+        <div class="parag">
+        <img src="img/slide2.jpg" alt="Первый слайд">
+        </div>
+      
+        <div class="parag">
+        <img src="img/slide1.jpg" alt="Второй слайд">
+        </div>
+      
+        <div class="parag">
+        <img src="img/slide5.jpg" alt="Третий слайд">
+        </div>
+      
+        <a class="prev" onclick="minusSlide()">❮</a>
+        <a class="next" onclick="plusSlide()">❯</a>
+      </div>
+      
+      <div class="uneizmen-akemada">
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(1)"></span>  
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>  
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>  
+      </div>
+    <h2 class="whywe">Почему мы?</h2>
+       <div class="whyweblock">
+        <div class="whywecard wow bounceIn" data-wow-duration="3s">
+            <div class="heart"><img src="img/like.png" alt="img"></div>
+            <h3>НАША КОМАНДА</h3>
+        </div>
+        <div class="whywecard wow bounceIn" data-wow-duration="3s">
+            <div class="dollors"><img src="img/dollar.png" alt="img"></div>
+            <h3>ЦЕНЫ</h3>
+        </div>
+        <div class="whywecard wow bounceIn" data-wow-duration="3s">
+            <div class="onmap"><img src="img/location.png" alt="img"></div>
+            <h3>РАСПОЛОЖЕНИЕ</h3>
+        </div>
+        <div class="whywecard wow bounceIn" data-wow-duration="3s">
+            <div class="workouts"><img src="img/gym.png" alt="img"></div>
+            <h3>ТРЕНИРОВКИ</h3>
+        </div>
+       </div>
+      
+       <div class="accordion">
+        <h2 class="faq">ВАШИ ВОПРОСЫ</h2> 
+   <div class="tab">
+    <input type="checkbox" id="tab1" name="tab-group">
+    <label for="tab1" class="tab-title">С какого возраста могу посещать ТРенажерный зал?</label> 
+    <section class="tab-content"> 
+    YourForm можно посещать без ограничений с 16 лет. C 16 до 18 лет необходимо оформить заявление от родителей.
+    </section> 
+   </div> 
+   <div class="tab">
+    <input type="checkbox" id="tab2" name="tab-group">
+    <label for="tab2" class="tab-title">Есть ли у тренажерного зала автомобильная стоянка?</label> 
+    <section class="tab-content"> 
+        Да, есть бесплатная стоянка, но помните — это все-таки центр города.
+    </section> 
+   </div> 
+   <div class="tab">
+    <input type="checkbox" id="tab3" name="tab-group">
+    <label for="tab3" class="tab-title">Что мне взять с собой в первый раз?</label>
+    <section class="tab-content">
+    В первый раз приноси чистый спортивный костюм, обувь и полотенце и навесной замочек для твоей раздевалки (см. картинку ниже). Также в первый раз принеси документ, удостоверяющий личность
+    </section>
+   </div>
+   <div class="tab">
+    <input type="checkbox" id="tab4" name="tab-group">
+    <label for="tab4" class="tab-title">Могу приостановить абонемент?</label>
+    <section class="tab-content">
+    Да, приостановить абонемент можно. Количество дней заморозки указано в абонементе..
+    </section>
+   </div>
+   <div class="tab">
+    <input type="checkbox" id="tab5" name="tab-group">
+    <label for="tab5" class="tab-title">Зачем в клубе установлены камеры видеонаблюдения?</label>
+    <section class="tab-content">
+    Мы установили в клубе видео наблюдение в целях вашей безопасности.
+    </section>
+   </div>
+  </div>
+  <h2 class="weinsmi">МЫ В СМИ</h2>
+  <div class="inSMI ">
+    <div class="SMIarticle wow fadeInDown" data-wow-duration="3s">
+        <div class="boxforpic">
+            <img src="img/smi2.jpg" alt="img">
+        </div>
+            <h3 class="smitext">Открытие новой сети тренажерных залов</h3>
+    </div>
+    <div class="SMIarticle wow fadeInRight" data-wow-duration="3s">
+        <div class="boxforpic">
+            <img src="img/smi3.jpg" alt="img">
+        </div>
+            <h3 class="smitext">Начало марафона YourForm</h3>
+    </div>
+    <div class="SMIarticle wow fadeInLeft" data-wow-duration="3s">
+        <div class="boxforpic">
+            <img src="img/smi4.jpg" alt="img">
+        </div>
+            <h3 class="smitext">Что предлагает YourForm???</h3>
+    </div>
+   </div>
+   <footer>
+    <div class="footercontent">
+        <div class="column">
+            <div class="number">
+                <p>КОНТАКТЫ</p>
+                <p>+999 99 999 99 99</p>
+                <p>+999 99 999 99 99</p>
+            </div>
+            <div class="mail">
+                <p>ПОЧТА</p>
+                <p>yourform@gmail.com</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="office">
+                <p>ОТДЕЛ&nbsp;КАДРОВ</p>
+                <p>8:00 - 17:00</p>
+            </div>
+            <div class="counters">
+                <p>БУХГАЛТЕРИЯ</p>
+                <p>8:00 - 17:00</p>
+            </div>
+        </div>
+        <div class="column">
+            <p>ДОГОВОР ОФЕРТЫ</p>
+            <p>СПОСОБ ОПЛАТЫ</p>
+            <div class="smallnetworks">
+                <p>СОЦСЕТИ</p>
+                <div class="networksicons">
+                    <div class="icon"><a target="_blank" href="https://www.facebook.com/"><img src="img/facebook.png" alt="img"></a></div>
+                    <div class="icon"><a target="_blank" href="https://vk.com/"><img src="img/vk.png" alt="img" ></a></div>
+                    <div class="icon"><a target="_blank" href="https://www.instagram.com/"><img src="img/instagram.png" alt="img" ></a></div>
+                    <div class="icon"><a target="_blank" href="https://web.telegram.org/"><img src="img/telegram.png" alt="img" ></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>      
+<script src="js/slider.js"></script>      
+</body>
+</html>
